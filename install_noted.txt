@@ -1,0 +1,16 @@
+ chmod +x ~/Downloads/Miniforge3-MacOSX-arm64.sh
+sh ~/Downloads/Miniforge3-MacOSX-arm64.sh
+source ~/miniforge3/bin/activate
+cd /Users/atulsharma/Documents/dev/projects/mantissaman/ml-play 
+conda create --prefix ./env python=3.8
+conda activate ./env
+conda install -c apple tensorflow-deps
+python -m pip install tensorflow-macos
+python -m pip install tensorflow-metal
+python -m pip install tensorflow-datasets
+conda install pytorch torchvision torchaudio -c pytorch-nightly
+conda install jupyter pandas numpy matplotlib scikit-learn
+jupyter notebook
+ 
+ 
+ Cuka7543
